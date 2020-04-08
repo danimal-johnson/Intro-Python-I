@@ -52,4 +52,6 @@ waypoints[0]['lon'] = -130
 
 # Write a loop that prints out all the field values for all the waypoints
 print(waypoints)
-# TODO: Write an actual loop
+# TODO: Write an actual loop (strip keys. loop.)
+for i in waypoints:
+    print(i['name'], i['lat'], i['lon'])

@@ -19,11 +19,10 @@ print(x)
 
 
 def outer():
-    global y
     y = 120
 
     def inner():
-        global y
+        nonlocal y
         y = 999
 
     inner()
@@ -35,5 +34,3 @@ def outer():
 
 
 outer()
-
-# TODO: Is there a way to do this without setting both to global?
